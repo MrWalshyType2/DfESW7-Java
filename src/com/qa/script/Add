@@ -1,0 +1,28 @@
+#!/usr/bin/env -S java --source 11
+
+// This script adds two integer numbers together
+
+// this file uses a shebang, above, to allow the running of the file from the command line.
+// - java source MUST BE specified
+// - java source MUST BE 11 or above
+
+// To run from the CLI, navigate to the current directory and use the following command: ./Add 3 7
+// - try entering an invalid number
+// - try too many inputs
+// - try too few inputs
+
+public class Add {
+
+	public static void main(String[] args) {
+		try {
+			int sum = Integer.valueOf(args[0]) + Integer.valueOf(args[1]);
+			System.out.println(args[0] + " + " + args[1] + " = " + sum);
+		} catch (NumberFormatException e) {
+			System.out.println("Please enter two valid integer numbers.");
+			System.out.println(args[0] + " + " + args[1] + " is not a valid expression");
+		} catch (ArrayIndexOutOfBoundsException e) {
+		    System.out.println("Please enter two valid integer numbers.");
+		}
+	}
+	
+}
