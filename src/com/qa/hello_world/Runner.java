@@ -1,4 +1,7 @@
 package com.qa.hello_world;
+
+import com.qa.data_types.Fraction;
+
 // classes represent components
 public class Runner {
 
@@ -20,6 +23,9 @@ public class Runner {
 		// 'a'
 		// 32.3
 		// false
+		Fraction f = new Fraction();
+		f.numerator = 10;
+		System.out.println(f.numerator);
 	}
 
 	// a package is a logical grouping for classes (it's a folder/directory that contains the java files)

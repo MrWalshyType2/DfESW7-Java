@@ -55,7 +55,6 @@ public class Runner {
 		
 		boolean bool = true; // can be true or false
 		
-		
 		// Reference types
 		// - all classes are reference types
 		// - reference types have state (fields, data describing them) and behaviours (methods, that act on the state)
@@ -63,28 +62,29 @@ public class Runner {
 		
 		// Strings are immutable, methods do not change the data inside them
 		// - .toUpperCase() below returns a new String rather than the old one converted to uppercase
-		System.out.println(greeting); // Hello
-		System.out.println(greeting.toUpperCase()); // HELLO
-		System.out.println(greeting); // Hello
-		
-		greeting = "World";
-		System.out.println(greeting);
+//		System.out.println(greeting); // Hello
+//		System.out.println(greeting.toUpperCase()); // HELLO
+//		System.out.println(greeting); // Hello
+//		
+//		greeting = "World";
+//		System.out.println(greeting);
 		
 		// String is a class
 		// - a class is a blueprint
 		// - each string created from that blueprint is called an "instance/object"
 		// - strings can be declared using a string literal inside double quotes
-		String farewells = "Bye byee";
+//		String farewells = "Bye byee";
 		// farewells and greeting are two different String objects
 		
 		// explicit declaration of a string
 		// - the 'new' keyword signifies a new object is being created
 		String anotherOne = new String("Some other string");
-		System.out.println(anotherOne);
+//		System.out.println(anotherOne);
 		
 		Fraction myFraction = new Fraction();
 		Fraction myFraction2 = new Fraction();
 		Fraction myBackupReference = myFraction;
+		
 		System.out.println(myFraction);
 		System.out.println(myFraction2);
 		System.out.println(myBackupReference);
@@ -93,8 +93,21 @@ public class Runner {
 		myFraction.numerator = 3;
 		myFraction.denominator = 6;
 		
-		System.out.println(myFraction.numerator); // 3
-		System.out.println(myFraction2.numerator); // 0
+		// the input value, 5 in this case, is known as an actual parameter/arguments
+		myFraction2.addToNumerator(5);
+		
+//		myFraction.printInfo();
+//		myFraction2.printInfo();
+		
+		String toDisplay = myFraction.getInfo();
+		System.out.println(toDisplay);
+		
+		Fraction anotherFraction = new Fraction();
+		anotherFraction.numerator = 3;  
+		anotherFraction.denominator = 6;
+		
+		Fraction result = myFraction.multiply(anotherFraction);
+		System.out.println(result.getInfo());
 	}
 
 }

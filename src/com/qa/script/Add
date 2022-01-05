@@ -5,6 +5,8 @@
 // this file uses a shebang, above, to allow the running of the file from the command line.
 // - java source MUST BE specified
 // - java source MUST BE 11 or above
+// - must be ran on Git Bash on Windows, fine on any Unix system (i.e., linux or mac)
+// - filename must not end in .java
 
 // To run from the CLI, navigate to the current directory and use the following command: ./Add 3 7
 // - try entering an invalid number
