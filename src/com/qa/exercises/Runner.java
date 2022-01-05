@@ -1,5 +1,8 @@
 package com.qa.exercises;
 
+import com.qa.exercises.calculator.Calculator;
+import com.qa.exercises.results.Results;
+
 public class Runner {
 
 	public static void main(String[] args) {

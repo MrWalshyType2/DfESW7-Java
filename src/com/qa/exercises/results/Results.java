@@ -1,4 +1,4 @@
-package com.qa.exercises;
+package com.qa.exercises.results;
 
 public class Results {
 	
@@ -6,12 +6,12 @@ public class Results {
 	// - they can be accessed anywhere inside this class
 
 	// exam scores
-	int physicsScore;
-	int chemistryScore;
-	int biologyScore;
+	public int physicsScore;
+	public int chemistryScore;
+	public int biologyScore;
 	
-	int totalScore;
-	int percentage;
+	public int totalScore;
+	public int percentage;
 	
 	public void displayResults() {
 		totalScore = physicsScore + chemistryScore + biologyScore;

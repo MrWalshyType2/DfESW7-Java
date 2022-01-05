@@ -1,4 +1,4 @@
-package com.qa.exercises;
+package com.qa.exercises.calculator;
 
 public class Calculator {
 

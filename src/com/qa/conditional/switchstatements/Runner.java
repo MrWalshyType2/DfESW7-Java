@@ -29,6 +29,6 @@ public class Runner {
 			System.out.println("It is monday");
 			break;
 		}
-	}
 
+	}
 }
