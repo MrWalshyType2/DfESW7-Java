@@ -1,6 +1,9 @@
 package com.qa.exercises;
 
 public class Results {
+	
+	// fields have a class scope
+	// - they can be accessed anywhere inside this class
 
 	// exam scores
 	int physicsScore;
