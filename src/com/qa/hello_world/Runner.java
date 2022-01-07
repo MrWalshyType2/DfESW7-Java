@@ -9,6 +9,22 @@ public class Runner {
 	// - methods represent behaviours
 	// - methods belong to a class
 	public static void main(String[] args) {
+		
+		// each element defaults to 0
+		int[] arr = new int[5];
+		
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = i + 1;
+			System.out.println(arr[i]);
+		}
+		
+		for (int element : arr) {
+			System.out.println(element);
+		}
+		
+		// 
+		
+		
 		System.out.println("Hello World");
 		
 		System.out.println(1);
